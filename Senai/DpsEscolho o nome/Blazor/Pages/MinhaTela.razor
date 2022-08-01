@@ -1,0 +1,11 @@
+@page "/test/{Palavra}"
+
+<h1>Tste de boi</h1>
+<MatButton>So o teste</MatButton>
+<p>@Palavra</p>
+
+@code
+{
+    [Parameter]
+    public string Palavra {get;set;}
+}

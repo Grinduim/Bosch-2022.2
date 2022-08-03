@@ -1,4 +1,4 @@
-namespace Blazor.Data;
+namespace blazorExemplo.Data;
 
 public class WeatherForecastService
 {

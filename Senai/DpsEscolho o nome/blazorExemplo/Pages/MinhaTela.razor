@@ -1,0 +1,13 @@
+@page "/test/{id}"
+
+<h1>Minha Tela</h1>
+
+<p>@id</p>
+
+<MatButton Icon="all_out">Meu botão</MatButton>
+
+@code
+{
+    [Parameter]
+    public string id { get; set; }
+}

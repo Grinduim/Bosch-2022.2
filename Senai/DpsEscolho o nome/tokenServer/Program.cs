@@ -7,13 +7,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<CryptoService>(p =>
-{
-    var service = new CryptoService();
-    service.InternalKeySize = 24;
-    service.UpdatePeriod = TimeSpan.FromHours(4);
-    return service;
-} );
+builder.AddJwt(24, TimeSpan.FromHours(2));
 
 var app = builder.Build();
 

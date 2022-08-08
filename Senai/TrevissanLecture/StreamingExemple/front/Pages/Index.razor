@@ -1,0 +1,13 @@
+﻿@page "/"
+
+@inject IJSRuntime js
+
+<video id="video" controls></video>
+
+@code
+{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await js.InvokeAsync<string>("PlayVideo", "58");
+    }
+}

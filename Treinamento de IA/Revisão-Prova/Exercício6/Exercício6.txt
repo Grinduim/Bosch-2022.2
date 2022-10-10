@@ -1,0 +1,11 @@
+Clusterização
+
+https://www.kaggle.com/datasets/dev0914sharma/customer-clustering?resource=download
+
+A segmentação de clientes é a subdivisão de um mercado em grupos distintos de clientes que compartilham características semelhantes. A segmentação de clientes pode ser um meio poderoso para identificar necessidades insatisfeitas dos clientes. Usando os dados acima, as empresas podem superar a concorrência desenvolvendo produtos e serviços atraentes.
+Você está devendo um shopping de supermercado e por meio de cartões de associado, você tem alguns dados básicos sobre seus clientes como ID do cliente, idade, sexo, renda anual e pontuação de gastos. Você quer entender os clientes como quem são os clientes-alvo para que o sentido possa ser dado à equipe de marketing e planejar a estratégia de acordo.
+
+Exemplos:
+https://www.kaggle.com/code/harshsingh2209/customer-segmentation-with-hierarchical-clustering
+https://www.kaggle.com/code/ozanonal/outliers-visualization-kmeans-hierarchical
+e outros na página inicial

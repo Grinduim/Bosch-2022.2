@@ -1,0 +1,19 @@
+Classificação
+
+Criar modelo para detectar se o doce possuí chocolate ou não baseado nas suas características. (Classe com chocolate e classe sem)
+Verificar relações e descobrir se algum outro ingrediente é possível prever.
+
+https://www.kaggle.com/datasets/fivethirtyeight/the-ultimate-halloween-candy-power-ranking
+candy-data.csv
+
+1- Abrir o CSV
+2- Verificar NAN e remover caso tenha
+3- Pré-processar dados qualitativos
+4- Separar dados para teste e treino
+5- Criar o modelo e treinar ele.
+6- Prever valores com os dados de treino ou de teste
+7- Fazer o gráfico de região de decisão 
+8- Fazer a matriz de confusão
+9- Fazer a métrica de acurácia (dados balanceados), precisão, recall e F1-Score (dados não balanceados)
+
+Sugestões de modelos: KNN, LogisticRegression, DecisionTree, SVM

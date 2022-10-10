@@ -1,0 +1,8 @@
+httpswww.kaggle.comcompetitionshouse-prices-advanced-regression-techniques
+
+Tradução
+
+Peça a um comprador de imóveis para descrever a casa dos seus sonhos, e eles provavelmente não começarão com a altura do teto do porão ou a proximidade de uma ferrovia leste-oeste. Mas o conjunto de dados desta competição de playground prova que muito mais influencia as negociações de preços do que o número de quartos ou uma cerca branca.
+Com 79 variáveis ​​explicativas que descrevem (quase) todos os aspectos das casas residenciais em Ames, Iowa, esta competição desafia você a prever o preço final de cada casa.
+
+Em resumo, crie o melhor modelo possível para prever o preço de uma casa utilizando os conhecimentos aprendidos para tratar os dados e testar os algoritmos.

@@ -1,0 +1,25 @@
+def ex003():
+    df = pd.read_csv('./exercicios/Exercício3/candy-data.csv')
+    df = df.dropna()
+
+    caracteristics = ['fruity', 'caramel', 'peanutyalmondy', 'nougat', 'crispedricewafer', 'hard', 'bar', 'pluribus', 'sugarpercent', 'pricepercent', 'winpercent']
+    x = df[caracteristics].values
+    y = df['chocolate'].values
+
+    x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=.25, random_state=RANDOM_STATE)
+
+    dtree = DecisionTreeClassifier(random_state=RANDOM_STATE)
+    dtree.fit(x_treino, y_treino)
+
+    plot_tree(dtree, feature_names=caracteristics)
+    plt.show()
+
+    y_pred = dtree.predict(x_teste)
+    ConfusionMatrixDisplay.from_predictions(y_teste, y_pred)
+    plt.show()
+
+    print('Métricas')
+    print(f'Acurácia: {accuracy_score(y_teste, y_pred)}')
+    print(f'Precisão: {precision_score(y_teste, y_pred)}')
+    print(f'Recall: {recall_score(y_teste, y_pred)}')
+    print(f'F1-Score: {f1_score(y_teste, y_teste)}')

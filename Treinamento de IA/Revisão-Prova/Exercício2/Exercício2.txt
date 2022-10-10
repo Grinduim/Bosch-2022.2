@@ -1,0 +1,19 @@
+Regressão Multidimensional
+
+Advertising.csv
+
+O dataset acima contém dados do número de reproduções de diferentes produtos em vários meios de propaganda (TV, Rádio e Jornais) e o número de vendas. (Todos os números estão divididos por mil)
+Crie um programa capaz de prever as vendas de um novo produto com base na sua divulgação por esses meios.
+
+
+1- Abrir o CSV
+2- Verificar NAN e remover caso tenha
+3- Pré-processar dados qualitativos
+4- Separar dados para teste e treino
+5- Criar o modelo e treinar ele.
+6- Prever valores com os dados de treino ou de teste
+7- Fazer o gráfico
+8- Fazer a métrica de R² ou mse ou mae
+
+Sugestões de modelos: LinearRegression(), Lasso() e ElasticNet(), RandomForestRegressor() e DecisionTreeRegressor()
+outros em: https://scikit-learn.org/stable/modules/linear_model.html

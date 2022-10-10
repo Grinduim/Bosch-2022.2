@@ -1,0 +1,22 @@
+Regressão Bidimensional
+
+https://www.kaggle.com/budincsevity/szeged-weather
+weatherHistory.csv
+
+Existe alguma relação entre os valores de humidade e temperatura? 
+E entre a humidade e temperatura aparente? 
+Verifique essas duas relações graficamente e crie uma forma de prever a temperatura em função da humidade.
+1- Abrir o CSV
+2- Verificar NAN e remover caso tenha
+3- Pré-processar dados qualitativos
+4- Separar dados para teste e treino
+
+5- Criar o modelo e treinar ele.
+6- Prever valores com os dados de treino ou de teste
+7- Fazer o gráfico
+8- Fazer a métrica de R², MSE e MAE
+
+Sugestões de modelos: LinearRegression(), Lasso() e ElasticNet(), RandomForestRegressor() e DecisionTreeRegressor()
+outros em: https://scikit-learn.org/stable/modules/linear_model.html
+
+Escolha o melhor modelo.

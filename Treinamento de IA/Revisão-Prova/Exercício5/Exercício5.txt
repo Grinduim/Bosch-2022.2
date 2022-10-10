@@ -1,0 +1,11 @@
+Tente predizer o criador do Superherói (Marvel, DC, etc...) utilizando as colunas de texto
+Passos:
+Tokenize
+StopWords
+Stemming or Lematize
+True or False by Naive Bayes
+Previsão
+Acurácia
+Teste final
+
+https://www.kaggle.com/datasets/jonathanbesomi/superheroes-nlp-dataset

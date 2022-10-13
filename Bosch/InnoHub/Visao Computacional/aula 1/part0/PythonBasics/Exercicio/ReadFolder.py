@@ -15,14 +15,23 @@ class ErrorPastNotFound(Exception):
 class FolderMonitor:
     def __init__(self, path_folder, dst_folder):
         self.path_folder = path_folder
-        self.dst_folder = dst_folder
-        
+        self._dst_folder = dst_folder
 
     def start_monitor(self):
         print('Monitorando... ')
         while True:
             for file in os.listdir(self.path_folder):
                 shutil.move(f'{self.path_folder}\\{file}', f'{self.dst_folder}\\{file}')
+
+    @property
+    def dst_folder(self):
+        return self._dst_folder
+
+    @dst_folder.setter
+    def dst_folder(self, new_path):
+        if not os.path.isdir(new_path):
+            raise FolderDoesNotExist("Caminho da pasta não existe", new_path)
+        self._dst_folder = new_path
 
 
 def _set_src_folder():

@@ -44,7 +44,7 @@ while True:
     cv2.imshow("Original", img)
     cv2.imshow("Contorno", copia)
     cv2.imshow("Objeto", segm)
-    cv2.imshow("Mascara",mask)
+    cv2.imshow("Mascara", mask)
     if cv2.waitKey(15) == ord('q'):
         break
 

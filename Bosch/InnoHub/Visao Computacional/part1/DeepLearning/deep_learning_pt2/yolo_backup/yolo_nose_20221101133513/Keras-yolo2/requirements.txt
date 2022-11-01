@@ -1,0 +1,6 @@
+tensorflow>=2.3.0
+imgaug
+opencv-python
+h5py
+tqdm
+numpy

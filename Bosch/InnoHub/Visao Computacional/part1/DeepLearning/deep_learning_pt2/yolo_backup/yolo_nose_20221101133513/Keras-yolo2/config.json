@@ -1,0 +1,58 @@
+{
+    "model" : {
+        "backend":              "./keras_yolo2/yolo_backend.Backend",
+        "input_size_w":         112,
+        "input_size_h":         112,
+        "gray_mode":            false,
+        "anchors":              [0.57273, 0.677385, 1.87446, 2.06253, 3.33843, 5.47434, 7.88282, 3.52778, 9.77052, 9.16828],
+        "labels":               ["nose"]
+    },
+
+    "parser_annotation_type":    "csv",
+
+    "train": {
+        "train_csv_file":       "ann_train_bbox.txt",
+        "train_csv_base_path":  "",
+        "train_image_folder":   "",
+        "train_annot_folder":   "",     
+
+        "callback":             null,
+        "train_times":          1,
+        "pretrained_weights":   "",
+        "batch_size":           4,
+        "learning_rate":        1e-4,
+        "nb_epochs":            40,
+        "warmup_epochs":        0,
+
+        "workers":              12,
+        "max_queue_size":       40,
+        "early_stop":           false,
+        "cosine_decay":         false,
+        "tensorboard_log_dir":  "./logs/1",
+
+        "object_scale":         5.0 ,
+        "no_object_scale":      1.0,
+        "coord_scale":          1.0,
+        "class_scale":          1.0,
+
+        "saved_weights_name":   "../nose_detect.h5"
+    },
+
+    "valid": {
+        "iou_threshold":        0.5,
+        "score_threshold":      0.5,
+        "valid_csv_file":       "ann_train_bbox.txt",
+        "valid_csv_base_path":  "",
+        "valid_image_folder":   "",
+        "valid_annot_folder":   "",
+
+        "valid_times":          1
+    },
+
+    "backup":{
+        "create_backup":        true,
+        "redirect_model":       true,
+        "backup_path":          "./yolo_backup",
+        "backup_prefix":        "yolo_nose"
+    }
+}
